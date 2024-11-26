@@ -43,9 +43,9 @@ export function StickyHeader({
   const navLinks = useMemo(
     () => [
       { id: 1, label: "Home", link: "/" },
-      { id: 2, label: "About", link: "#about" },
-      { id: 3, label: "Services", link: "issues" },
-      { id: 4, label: "Contact", link: "#contact" },
+      { id: 2, label: "Soluções", link: "solucoes" },
+      { id: 3, label: "Equipe", link: "issues" },
+      { id: 4, label: "Sugestões", link: "suggestions" },
     ],
     []
   );
@@ -61,8 +61,8 @@ export function StickyHeader({
     <header ref={stickyNavRef} className="sticky top-0 z-50 px-10 py-7 xl:px-0">
       <nav className="relative mx-auto flex items-center justify-between max-w-2xl">
         <motion.img
-          className="h-10 w-10 object-cover"
-          src="https://images.pexels.com/photos/669502/pexels-photo-669502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          className="h-16 w-20"
+          src='logo.svg'
           alt="MagicUI Logo"
           animate={{
             y: scrollY >= 120 ? -50 : 0,

@@ -6,6 +6,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { Particles } from "@/components/magicui/particles";
 
 import { StrapiImage } from "@/components/strapi/strapi-image";
+import { CarouselBlock } from "./carousel";
 
 export function Hero() {
   return (
@@ -37,16 +38,17 @@ export function Hero() {
           />
         </Button>
       </div>
-      <div className="relative mt-[8rem] animate-fade-up opacity-0 [--animation-delay:400ms] after:absolute after:inset-0 after:z-50 after:[background:linear-gradient(to_top,hsl(var(--background))_30%,transparent)]">
+      <div className="relative mt-[8rem] animate-fade-up opacity-0 [--animation-delay:400ms]">
         <div className="rounded-xl border border-white/10 bg-white/10 bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,hsl(var(--accent)),hsl(var(--accent)),transparent_40%)] before:animate-image-glow before:opacity-0">
           <BorderBeam size={200} anchor={90} duration={10} borderWidth={1.5} />
-          <StrapiImage
+          <CarouselBlock />
+          {/* <StrapiImage
             alt="Hero Image"
             src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg"
             className="relative w-full h-full rounded-[inherit] object-contain border"
             width={1080}
             height={600}
-          />
+          /> */}
         </div>
       </div>
       <Particles
