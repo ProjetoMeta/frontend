@@ -1,5 +1,5 @@
-import { Hero } from "@/components/blocks";
+import { Portal } from "@/components/blocks";
 
 export default function HomeRoute() {
-  return <Hero />;
+  return <Portal />;
 }

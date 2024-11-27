@@ -1,3 +1,3 @@
-import { Hero } from "./hero";
+import { Portal } from "./portal";
 
-export { Hero };
+export { Portal };

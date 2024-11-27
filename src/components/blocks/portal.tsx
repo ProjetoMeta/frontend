@@ -5,10 +5,9 @@ import { Button } from "@/components/ui/button";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { Particles } from "@/components/magicui/particles";
 
-import { StrapiImage } from "@/components/strapi/strapi-image";
 import { CarouselBlock } from "./carousel";
 
-export function Hero() {
+export function Portal() {
   return (
     <section className="relative mx-auto px-6 text-center md:px-8 pt-32 max-w-[80rem]">
       <div className="border p-4 border rounded-md">
@@ -23,12 +22,11 @@ export function Hero() {
             />
           </TextShimmer>
         </div>
-        <h1 className="bg-gradient-to-br from-foreground from-30% to-foreground/40 bg-clip-text py-6 text-center text-5xl font-medium font-heading leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-2rem] animate-fade-in opacity-0 [--animation-delay:200ms] caret-foreground">
-          i-Escolar
+        <h1 className="bg-gradient-to-br from-foreground from-30% to-foreground/40 bg-clip-text py-6 text-center text-4xl font-medium font-heading leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-7xl lg:text-8xl translate-y-[-2rem] animate-fade-in opacity-0 [--animation-delay:200ms] caret-foreground">
+          iEscolar
         </h1>
-        <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] max-w-xl mx-auto">
-          Beautifully designed, animated components and templates built with Tailwind CSS, React and
-          Framer Motion.
+        <p className="mb-12 text-sm tracking-tight text-muted-foreground md:text-lg text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms] max-w-2xl mx-auto">
+        Gerencie as principais tarefas que envolvem a gestão escolar de sua instituição.
         </p>
         <Button className="translate-y-[-1rem] animate-fade-in gap-1 rounded-lg opacity-0 ease-in-out [--animation-delay:600ms]">
           <span>Iniciar</span>
