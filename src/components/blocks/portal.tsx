@@ -4,6 +4,7 @@ import { TextShimmer } from "@/components/magicui/text-shimmer";
 import { Button } from "@/components/ui/button";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import { Particles } from "@/components/magicui/particles";
+import { Roboto } from "next/font/google";
 
 import { CarouselBlock } from "./carousel";
 
